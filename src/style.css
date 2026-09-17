@@ -1,0 +1,150 @@
+:root {
+    --primary-green: #0d5c3a;
+    --accent-green: #107c41;
+    --student-color: #2e7d32;
+    --faculty-color: #1565c0;
+    --admin-color: #6a1b9a;
+    --bg-light: #f8fafc;
+}
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.brand-badge {
+    background: #a61c1c;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+
+.university-name {
+    font-weight: 800;
+    color: #a61c1c;
+}
+
+.sub-dept {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.btn-primary {background: var(--primary-green); color: white;}
+.btn-secondary {border: 1px solid var(--primary-green); color: var(--primary-green);}
+
+.hero-banner {
+    background: linear-gradient(135deg, var(--primary-green) 0%, #052e1c 100%);
+    color: white;
+    padding: 3.5rem 1rem;
+    text-align: center;
+}
+
+.module-tag {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+.hero-cta-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-hero-primary {
+    background: white;
+    color: var(--primary-green);
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-her-secondary {
+    border: 1px solid white;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.bg-light { background-color: var(--bg-light);}
+
+.section-title {
+    color: var(--primary-green);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: #64748b;
+    margin-bottom: 2rem;
+}
+
+.flow-image-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+.flow-img {
+    width: 100%;
+    max-width: 850px;
+    border-radius: 8px;
+}
