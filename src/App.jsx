@@ -1,6 +1,9 @@
-
 import { useState } from 'react'
 import './App.css'
+
+import Header from './components/Header'
+import TaskForm from './components/TaskForm'
+import TaskList from './components/TaskList'
 
 function App() {
   const [tasks, setTasks] = useState([])
@@ -19,34 +22,23 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Campus Connect</h1>
-      <p>My Task Manager</p>
+      <Header />
 
-      <div className="task-input">
-        <input
-          type="text"
-          placeholder="Enter a task"
-          value={taskInput}
-          onChange={(e) => setTaskInput(e.target.value)}
-        />
-        <button onClick={addTask}>Add Task</button>
-      </div>
+      <TaskForm
+        taskInput={taskInput}
+        setTaskInput={setTaskInput}
+        onAdd={addTask}
+      />
 
       <h2>My Tasks</h2>
 
       {tasks.length === 0 ? (
         <p>No tasks added yet.</p>
       ) : (
-        <ul>
-          {tasks.map((task, index) => (
-            <li key={index}>
-              {task}
-              <button onClick={() => deleteTask(index)}>
-                Delete
-              </button>
-            </li>
-          ))}
-        </ul>
+        <TaskList
+          tasks={tasks}
+          onDelete={deleteTask}
+        />
       )}
     </div>
   )
